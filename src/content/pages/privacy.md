@@ -43,7 +43,7 @@ Blog posts may contain links to third-party websites (GitHub, LinkedIn, document
 
 For privacy-related inquiries, contact me at:
 
-- **Email:** [hello@alnashiri.dev](mailto:hello@alnashiri.dev)
+- **Email:** [khaldnashry99@gmail.com](mailto:khaldnashry99@gmail.com)
 - **LinkedIn:** [linkedin.com/in/khaled-al-nashery](https://www.linkedin.com/in/khaled-al-nashery/)
 
 ---
