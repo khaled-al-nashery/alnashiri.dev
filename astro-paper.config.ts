@@ -28,7 +28,7 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "github",   url: "https://github.com/khaled-al-nashery" },
     { name: "linkedin", url: "https://www.linkedin.com/in/khaled-al-nashery/" },
-    // { name: "x", url: "https://x.com/yourusername" },
+
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
