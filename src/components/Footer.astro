@@ -1,0 +1,41 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { getRelativeLocaleUrl } from "astro:i18n";
+import Socials from "./Socials.astro";
+import { useTranslations } from "@/i18n";
+import config from "@/config";
+
+type Props = {
+  noMarginTop?: boolean;
+} & HTMLAttributes<"footer">;
+
+const { noMarginTop = false, class: className, ...attrs } = Astro.props;
+
+const locale = Astro.currentLocale ?? config.site.lang;
+const t = useTranslations(locale);
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  class:list={["app-layout", { "mt-auto": !noMarginTop }, className]}
+  {...attrs}
+>
+  <div
+    class="border-border flex flex-col items-center justify-between border-t py-6 sm:flex-row-reverse sm:py-4"
+  >
+    <Socials />
+    <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
+      <span>{t.footer.copyright} &#169; {currentYear}</span>
+      <span class="hidden sm:inline">&nbsp;|&nbsp;</span>
+      <span>{t.footer.allRightsReserved}</span>
+    </div>
+  </div>
+  <nav class="border-border flex flex-wrap items-center justify-center gap-x-5 gap-y-1 border-t py-4 text-sm text-muted-foreground">
+    <a href={getRelativeLocaleUrl(locale, "tags")} class="hover:text-accent transition-colors">{t.nav.tags}</a>
+    <a href={getRelativeLocaleUrl(locale, "archives")} class="hover:text-accent transition-colors">{t.nav.archives}</a>
+    <a href={getRelativeLocaleUrl(locale, "search")} class="hover:text-accent transition-colors">{t.nav.search}</a>
+    <a href={getRelativeLocaleUrl(locale, "about")} class="hover:text-accent transition-colors">{t.nav.about}</a>
+    <a href={getRelativeLocaleUrl(locale, "privacy")} class="hover:text-accent transition-colors">Privacy</a>
+    <a href={getRelativeLocaleUrl(locale, "rss.xml")} class="hover:text-accent transition-colors">RSS</a>
+  </nav>
+</footer>

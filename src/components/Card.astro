@@ -1,0 +1,63 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getPostUrl } from "@/utils/getPostPaths";
+import { toTransitionName } from "@/utils/toTransitionName";
+import { slugifyStr } from "@/utils/slugify";
+import { getReadingTime } from "@/utils/getReadingTime";
+import Datetime from "./Datetime.astro";
+
+type Props = {
+  variant?: "h2" | "h3";
+} & CollectionEntry<"posts">;
+
+const { variant: Heading = "h2", id, data, filePath, body } = Astro.props;
+
+const { title, description, category, tags = [], ...props } = data;
+const readingTime = getReadingTime(body ?? "");
+---
+
+<li class="my-6">
+  <a
+    href={getPostUrl(id, filePath, Astro.currentLocale)}
+    aria-label={`Read ${title}`}
+    class:list={[
+      "text-accent inline-block text-lg font-medium",
+      "decoration-dashed underline-offset-4 hover:underline",
+      "focus-visible:no-underline focus-visible:underline-offset-0",
+    ]}
+  >
+    <Heading transition:name={toTransitionName(title)}>
+      {title}
+    </Heading>
+  </a>
+  {category && (
+    <a
+      href={`/category/${slugifyStr(category)}/`}
+      aria-label={`View posts in ${category} category`}
+      class="mb-2 inline-flex items-center rounded-md border border-accent/20 bg-accent/10 px-2 py-0.5 text-xs font-semibold text-accent transition-colors hover:border-accent hover:bg-accent/20"
+    >
+      {category}
+    </a>
+  )}
+  <Datetime {...props} />
+  <p class="mb-0.5 text-muted-foreground text-sm">{readingTime}</p>
+  <p>{description}</p>
+  {
+    tags.length > 0 && (
+      <div class="mt-2 flex flex-wrap gap-1.5">
+        {tags.map(tag => {
+          const tagSlug = slugifyStr(tag);
+          return (
+            <a
+              href={`/tags/${tagSlug}/`}
+              aria-label={`View posts tagged ${tag}`}
+              class="text-muted-foreground hover:text-accent text-xs font-medium transition-colors"
+            >
+              #{tag}
+            </a>
+          );
+        })}
+      </div>
+    )
+  }
+</li>
