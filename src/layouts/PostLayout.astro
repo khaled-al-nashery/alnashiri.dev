@@ -12,6 +12,7 @@ type Props = {
   tags?: string[];
   category?: string;
   wordCount?: number;
+  faqSchema?: Record<string, unknown> | null;
 };
 
 const { site } = config;
@@ -26,6 +27,7 @@ const {
   tags = [],
   category,
   wordCount,
+  faqSchema = null,
 } = Astro.props;
 
 const postUrl = canonicalURL ?? new URL(Astro.url.pathname, Astro.site).href;
@@ -67,7 +69,7 @@ const structuredData = {
     name: site.title,
     logo: {
       "@type": "ImageObject",
-      url: new URL("favicon.svg", Astro.site).href,
+      url: new URL("og.png", Astro.site).href,
     },
   },
 };
@@ -108,6 +110,17 @@ const structuredData = {
       is:inline
       set:html={JSON.stringify(structuredData)}
     />
+
+    {/* FAQPage schema — auto-extracted from markdown FAQ section */}
+    {
+      faqSchema && (
+        <script
+          type="application/ld+json"
+          is:inline
+          set:html={JSON.stringify(faqSchema)}
+        />
+      )
+    }
   </Fragment>
 
   <slot />

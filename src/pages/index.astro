@@ -18,6 +18,11 @@ const { socials, posts: postsConfig } = config;
 const locale = Astro.currentLocale ?? config.site.lang;
 const t = useTranslations(locale);
 
+// SEO: override homepage title & description with keywords (instead of generic site.title)
+const homeTitle = `${config.site.title} — Software Architecture & System Design`;
+const homeDescription =
+  "Practical guides on microservices architecture, system design patterns, API gateways, and distributed systems for software engineers and architects.";
+
 const posts = await getCollection("posts");
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
@@ -44,7 +49,7 @@ const webSiteSchema = {
 };
 ---
 
-<Layout>
+<Layout title={homeTitle} description={homeDescription}>
   <Fragment slot="head">
     <script
       type="application/ld+json"

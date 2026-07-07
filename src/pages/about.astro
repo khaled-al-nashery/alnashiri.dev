@@ -16,6 +16,19 @@ if (!about) {
 }
 
 const { Content } = await render(about);
+
+// Person JSON-LD for E-E-A-T signals and Google Knowledge Graph
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: config.site.author,
+  url: config.site.url,
+  jobTitle: "Senior Software Architect",
+  description: about.data.description,
+  sameAs: config.socials
+    .map(s => s.url)
+    .filter(Boolean),
+};
 ---
 
 <Layout
@@ -24,6 +37,14 @@ const { Content } = await render(about);
   ogImage={about.data.ogImage}
   canonicalURL={about.data.canonicalURL}
 >
+  <Fragment slot="head">
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify(personSchema)}
+    />
+  </Fragment>
+
   <Header />
 
   <Breadcrumb />
@@ -34,3 +55,4 @@ const { Content } = await render(about);
 
   <Footer />
 </Layout>
+

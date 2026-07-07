@@ -68,12 +68,13 @@ const rssHref = getRelativeLocaleUrl(
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={socialImageURL} />
 
-    <!-- Twitter / X -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={title} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={socialImageURL} />
+    <!-- Twitter / X – commented out; will be re-added with correct `name` attribute later
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageURL} />
+    -->
 
     <!-- RSS autodiscovery -->
     <link
@@ -116,36 +117,44 @@ const rssHref = getRelativeLocaleUrl(
 
     <ClientRouter />
 
-    <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6E3X87WYDY"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-6E3X87WYDY');
-    </script>
+    <!-- Google Analytics moved to end of <body> to avoid render-blocking -->
   </head>
   <body
     class="bg-background font-app text-foreground selection:bg-accent/75 selection:text-accent-foreground flex min-h-svh flex-col"
   >
-    <div id="reading-progress" class="fixed top-0 left-0 h-1 bg-accent z-50 transition-all duration-75" style="width: 0%;"></div>
+    <div id="reading-progress" class="fixed top-0 left-0 h-1 w-full bg-accent z-50 origin-left will-change-transform" style="transform: scaleX(0);"></div>
     <slot />
     <script>
       import "@/scripts/theme";
     </script>
     <script is:inline data-astro-rerun>
-      function updateReadingProgress() {
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const scrolled = (winScroll / height) * 100;
-        const progressBar = document.getElementById("reading-progress");
-        if (progressBar) {
-          progressBar.style.width = scrolled + "%";
+      (function () {
+        var ticking = false;
+        function updateReadingProgress() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+          var progressBar = document.getElementById("reading-progress");
+          if (progressBar) progressBar.style.transform = "scaleX(" + (scrolled / 100) + ")";
+          ticking = false;
         }
-      }
-      document.addEventListener("scroll", updateReadingProgress);
-      updateReadingProgress();
+        document.addEventListener("scroll", function () {
+          if (!ticking) {
+            requestAnimationFrame(updateReadingProgress);
+            ticking = true;
+          }
+        }, { passive: true });
+        requestAnimationFrame(updateReadingProgress);
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) — placed at end of body to avoid render-blocking -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-6E3X87WYDY"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6E3X87WYDY');
     </script>
   </body>
 </html>

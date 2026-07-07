@@ -1,6 +1,6 @@
 ---
 title: "Microservices Architecture Diagram Explained + Examples"
-description: "Microservices architecture diagram guide for software engineers and architects to learn layers, services, databases, APIs, and real examples."
+description: "Complete microservices architecture diagram guide with layers, API gateways, database-per-service, Kafka event flows, and real e-commerce examples."
 pubDatetime: 2026-07-06T09:00:00Z
 modDatetime: null
 category: "System Design"
@@ -43,10 +43,12 @@ Without a diagram, teams often lose visibility into how the system actually work
 A strong microservices architecture diagram usually contains four main layers: the client layer, API gateway layer, microservices layer, and data layer.
 
 <img
-  src="/assets/blog/microservices-architecture-diagram/anatomy.webp"
+  src="/assets/blog/microservices-architecture-diagram/anatomy-opt.webp"
+  srcset="/assets/blog/microservices-architecture-diagram/anatomy-mobile.webp 568w, /assets/blog/microservices-architecture-diagram/anatomy-opt.webp 800w"
   alt="Diagram showing the anatomy of a microservices architecture with a client layer, API gateway, independent services, and isolated databases."
   width="1270"
   height="1162"
+  sizes="(max-width: 768px) 100vw, 672px"
   fetchpriority="high"
   loading="eager"
   decoding="async"
@@ -136,10 +138,12 @@ Synchronous communication usually happens through REST or gRPC. One service send
 Asynchronous communication uses events and message brokers. One service publishes an event, and other services consume it later. This makes the system more scalable and resilient because services do not need to wait for each other.
 
 <img
-  src="/assets/blog/microservices-architecture-diagram/sync-vs-async.webp"
+  src="/assets/blog/microservices-architecture-diagram/sync-vs-async-opt.webp"
+  srcset="/assets/blog/microservices-architecture-diagram/sync-vs-async-mobile.webp 568w, /assets/blog/microservices-architecture-diagram/sync-vs-async-opt.webp 800w"
   alt="Flowchart comparing synchronous REST or gRPC communication with asynchronous event-driven communication through a Kafka message broker."
   width="1360"
   height="1015"
+  sizes="(max-width: 768px) 100vw, 672px"
   loading="lazy"
   decoding="async"
 />
@@ -192,10 +196,12 @@ For example, once an order is created, payment processing, shipping preparation,
 An e-commerce platform is one of the best examples of microservices architecture because it contains multiple business capabilities that can be separated into independent services.
 
 <img
-  src="/assets/blog/microservices-architecture-diagram/ecommerce-example.webp"
+  src="/assets/blog/microservices-architecture-diagram/ecommerce-example-opt.webp"
+  srcset="/assets/blog/microservices-architecture-diagram/ecommerce-example-mobile.webp 568w, /assets/blog/microservices-architecture-diagram/ecommerce-example-opt.webp 800w"
   alt="Practical e-commerce microservices architecture diagram showing a mobile app, API gateway, cart service, catalog service, order service, payment service, shipping service, and Kafka event flow."
   width="1527"
   height="1089"
+  sizes="(max-width: 768px) 100vw, 672px"
   loading="lazy"
   decoding="async"
 />
@@ -221,10 +227,12 @@ A monolithic architecture places the user interface, business logic, and data ac
 A microservices architecture separates the application into independent services. Each service owns its own logic and data.
 
 <img
-  src="/assets/blog/microservices-architecture-diagram/monolith-vs-microservices.webp"
+  src="/assets/blog/microservices-architecture-diagram/monolith-vs-microservices-opt.webp"
+  srcset="/assets/blog/microservices-architecture-diagram/monolith-vs-microservices-mobile.webp 568w, /assets/blog/microservices-architecture-diagram/monolith-vs-microservices-opt.webp 800w"
   alt="Side-by-side comparison diagram showing a monolithic architecture with one shared database versus a microservices architecture with independent services and separate databases."
   width="1861"
   height="751"
+  sizes="(max-width: 768px) 100vw, 672px"
   loading="lazy"
   decoding="async"
 />
