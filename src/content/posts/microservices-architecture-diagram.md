@@ -370,6 +370,8 @@ For software engineers and system architects, learning how to read and create th
 
 The best diagrams are not the most complicated ones. They are the diagrams that make system behavior clear, show ownership, and help teams make better engineering decisions.
 
+To understand exactly what each piece of the diagram does in production, read our detailed guide on the **[main components of microservices architecture](/posts/main-components-of-microservices-architecture)**.
+
 ## Frequently Asked Questions About Microservices Architecture Diagrams
 
 ### What is a microservices architecture diagram?
