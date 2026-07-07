@@ -37,5 +37,6 @@ export default defineAstroPaperConfig({
     { name: "telegram", url: "https://t.me/share/url?url=" },
     { name: "pinterest", url: "https://pinterest.com/pin/create/button/?url=" },
     { name: "mail",     url: "mailto:?subject=See%20this%20post&body=" },
+    { name: "linkedin", url: "https://www.linkedin.com/shareArticle?mini=true&url=" },
   ],
 });
