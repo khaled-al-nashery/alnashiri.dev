@@ -3,7 +3,7 @@ title: "Microservices Architecture Components Explained With Examples"
 description: "Learn the core components of microservices architecture: APIs, gateways, databases, service discovery, message brokers, and more."
 pubDatetime: 2026-07-07T12:00:00Z
 modDatetime: null
-category: "System Design"
+category: "Fundamentals"
 tags: ["Microservices", "Distributed Systems", "Architecture", "API Gateway", "Service Discovery"]
 featured: false
 draft: false
@@ -827,8 +827,9 @@ Then add components like API gateway, service discovery, message brokers, contai
 
 If you want a visual overview of how these pieces fit together, read our guide on **[microservices architecture diagram explained](/posts/microservices-architecture-diagram)**.
 
-In the next article, we will compare **Microservices vs Monolithic Architecture** so you can understand when microservices are the right choice and when a monolith is still better.
+Next, read our guide on **[Microservices vs Monolithic Architecture](/posts/microservices-vs-monolithic-architecture)** to understand when microservices are the right choice and when a monolith is still better.
 
 ## Related Articles
 
 - [Microservices Architecture Diagram Explained](/posts/microservices-architecture-diagram)
+- [Microservices vs Monolithic Architecture](/posts/microservices-vs-monolithic-architecture)
