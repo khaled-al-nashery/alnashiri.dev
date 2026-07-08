@@ -4,7 +4,7 @@ description: "Learn the core components of microservices architecture: APIs, gat
 pubDatetime: 2026-07-07T12:00:00Z
 modDatetime: null
 category: "System Design"
-tags: ["Microservices", "System Design", "Architecture", "API Gateway", "Service Discovery"]
+tags: ["Microservices", "Distributed Systems", "Architecture", "API Gateway", "Service Discovery"]
 featured: false
 draft: false
 ---
@@ -20,10 +20,11 @@ In this guide, you will learn the main components of microservices architecture 
 
 ---
 
+
 ## Simple Microservices Architecture Components Diagram
 
 <figure class="my-8">
-  <img src="/assets/blog/main-components-of-microservices-architecture/Simple%20Microservices%20Architecture%20Components%20Diagram.webp" alt="Simple microservices architecture components diagram showing API gateway, independent services, databases, service discovery, message broker, monitoring, and deployment." class="w-full h-auto rounded-lg shadow-xl" loading="lazy" width="800" height="450" title="Simple Microservices Architecture Components Diagram" />
+  <img src="/assets/blog/main-components-of-microservices-architecture/simple-microservices-architecture-components-diagram.webp" alt="Simple microservices architecture components diagram showing API gateway, independent services, databases, service discovery, message broker, monitoring, and deployment." class="w-full h-auto rounded-lg shadow-xl" loading="lazy" width="800" height="450" title="Simple Microservices Architecture Components Diagram" />
   <figcaption class="text-center text-sm text-gray-500 mt-3">Simple Microservices Architecture Components Diagram</figcaption>
 </figure>
 
@@ -563,7 +564,7 @@ Imagine an e-commerce application with the following services:
 * Notification Service
 
 <figure class="my-8">
-  <img src="/assets/blog/main-components-of-microservices-architecture/E-commerce%20Microservices%20Request%20Flow%20from%20client%20to%20services.webp" alt="E-commerce microservices request flow showing API gateway, order service, database, message broker, payment service, shipping service, notification service, and monitoring." class="w-full h-auto rounded-lg shadow-xl" loading="lazy" width="800" height="450" title="E-commerce Microservices Request Flow" />
+  <img src="/assets/blog/main-components-of-microservices-architecture/e-commerce-microservices-request-flow.webp" alt="E-commerce microservices request flow showing API gateway, order service, database, message broker, payment service, shipping service, notification service, and monitoring." class="w-full h-auto rounded-lg shadow-xl" loading="lazy" width="800" height="450" title="E-commerce Microservices Request Flow" />
   <figcaption class="text-center text-sm text-gray-500 mt-3">E-commerce Microservices Request Flow from client to services</figcaption>
 </figure>
 
@@ -724,7 +725,7 @@ Every service call should have a timeout. Important dependencies should have ret
 Use this checklist before designing or reviewing a microservices system.
 
 <figure class="my-8">
-  <img src="/assets/blog/main-components-of-microservices-architecture/Microservices%20Components%20Checklist%20categorization.webp" alt="Microservices components checklist showing required, production, and advanced components." class="w-full h-auto rounded-lg shadow-xl" loading="lazy" width="800" height="450" title="Microservices Components Checklist" />
+  <img src="/assets/blog/main-components-of-microservices-architecture/microservices-components-checklist.webp" alt="Microservices components checklist showing required, production, and advanced components." class="w-full h-auto rounded-lg shadow-xl" loading="lazy" width="800" height="450" title="Microservices Components Checklist" />
   <figcaption class="text-center text-sm text-gray-500 mt-3">Microservices Components Checklist categorization</figcaption>
 </figure>
 
@@ -764,7 +765,7 @@ Use this checklist before designing or reviewing a microservices system.
 
 ---
 
-## FAQs About Microservices Architecture Components
+## Frequently Asked Questions About Microservices Architecture Components
 
 ### What are the main components of microservices architecture?
 
@@ -828,91 +829,6 @@ If you want a visual overview of how these pieces fit together, read our guide o
 
 In the next article, we will compare **Microservices vs Monolithic Architecture** so you can understand when microservices are the right choice and when a monolith is still better.
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What are the main components of microservices architecture?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The main components of microservices architecture are independent services, APIs, an API gateway, service discovery, service registry, load balancing, database per service, message brokers, monitoring, logging, tracing, containers, CI/CD pipelines, security, and resilience patterns. These components help services communicate, deploy, scale, and recover independently."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the most important component in microservices?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The most important component is clear service boundaries. Without good boundaries, the system may become a distributed monolith. APIs, data ownership, monitoring, and resilience are also essential for production microservices."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is an API gateway required in microservices?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An API gateway is not always required for a tiny system, but it is very useful in production. It gives clients one entry point and can handle routing, authentication, rate limiting, logging, and response aggregation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is service discovery in microservices?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Service discovery is the process of finding the network location of a running service instance. It helps services communicate without hardcoding IP addresses or fixed URLs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between service discovery and service registry?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A service registry stores service locations and health information. Service discovery uses that information to find and connect to a healthy service instance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should each microservice have its own database?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In most microservices designs, each service should own its own database or data store. This improves independence and reduces coupling. However, it also makes reporting, data consistency, and cross-service transactions more complex."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do microservices use message brokers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Microservices use message brokers for asynchronous communication. A message broker allows one service to publish an event and other services to react later without direct dependency between them."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is service mesh required for microservices?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No, service mesh is not required for every microservices system. It is an advanced component that becomes useful when you have many services and need better control over service-to-service traffic, security, retries, and observability."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What components are required for production microservices?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Production microservices usually need clear service boundaries, APIs, authentication, authorization, monitoring, logging, tracing, CI/CD, configuration management, secrets management, basic resilience, and a deployment strategy. API gateway, service discovery, load balancing, and message brokers are also commonly needed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between API gateway and service mesh?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An API gateway mainly manages client-to-service traffic, also called north-south traffic. A service mesh manages service-to-service traffic, also called east-west traffic. They solve different problems and can be used together in larger systems."
-      }
-    }
-  ]
-}
-</script>
+## Related Articles
+
+- [Microservices Architecture Diagram Explained](/posts/microservices-architecture-diagram)
