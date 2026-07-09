@@ -156,7 +156,7 @@ An API gateway in microservices can also help with:
 
 For example, when a user places an order from a mobile app, the API gateway receives the request, validates the user token, and forwards the request to Order Service.
 
-The API gateway should not contain core business logic. It should route and protect traffic, not decide how orders, payments, or inventory should work.
+The API gateway should not contain core business logic. It should route and protect traffic, not decide how orders, payments, or inventory should work. For a deeper dive into routing and edge concerns, read about the [API Gateway in microservices](/posts/api-gateway-in-microservices/).
 
 ---
 
@@ -185,7 +185,7 @@ There are two common approaches:
 | Client-side discovery | The client service asks a registry for available service instances and chooses one              |
 | Server-side discovery | The client sends the request to a load balancer, and the load balancer finds a healthy instance |
 
-Service discovery makes the system more flexible because services can move and scale without breaking communication.
+Service discovery makes the system more flexible because services can move and scale without breaking communication. For a deeper explanation, read [service discovery in microservices](/posts/service-discovery-in-microservices/).
 
 ---
 
