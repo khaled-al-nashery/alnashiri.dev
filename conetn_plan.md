@@ -10,14 +10,14 @@
 | # | Article Title | Bucket | Category | Status | Primary Keyword |
 |---|---|---|---|---|---|
 | — | Microservices Architecture Guide: Components, Patterns, Diagrams, Deployment, and Best Practices | Global Pillar | — | Next Coming | microservices architecture guide |
-| 1 | What Are Microservices? A Simple Explanation for Beginners | B1 Pillar | Fundamentals | Next Coming | what are microservices |
-| 2 | Microservices Architecture Diagram Explained + Examples | B1 Cluster / B2 Pillar | Visual Guides | Published | microservices architecture diagram |
+| 1 | What Are Microservices? A Simple Explanation for Beginners | B1 Pillar | Fundamentals | Published | what are microservices |
+| 2 | Microservices Architecture Diagram Explained + Examples | B1 Cluster / B2 Pillar | Architecture Diagrams & Core Flows | Published | microservices architecture diagram |
 | 3 | Microservices Architecture Components Explained With Examples | B1 Cluster | Fundamentals | Published | components of microservices architecture |
-| 4 | Microservices vs Monolithic Architecture | B1 Cluster | Fundamentals | Working Locally | microservices vs monolithic |
-| 5 | API Gateway in Microservices Architecture Explained | B2 Cluster | Visual Guides | Next Coming | api gateway in microservices |
-| 6 | Database per Service Pattern Explained | B2 Cluster (linked from B4) | Visual Guides | Next Coming | database per service pattern |
-| 7 | Service Discovery in Microservices Explained | B2 Cluster | Visual Guides | Next Coming | service discovery in microservices |
-| 8 | Event-Driven Microservices Architecture Diagram | B2 Cluster | Visual Guides | Next Coming | event-driven microservices architecture |
+| 4 | Microservices vs Monolithic Architecture | B1 Cluster | Fundamentals | Published | microservices vs monolithic |
+| 5 | API Gateway in Microservices Architecture Explained | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | api gateway in microservices |
+| 6 | Database per Service Pattern Explained | B2 Cluster (linked from B4) | Architecture Diagrams & Core Flows | Next Coming | database per service pattern |
+| 7 | Service Discovery in Microservices Explained | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | service discovery in microservices |
+| 8 | Event-Driven Microservices Architecture Diagram | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | event-driven microservices architecture |
 | 9 | How to Design Microservices Architecture Using Patterns and Principles | B3 Pillar | Design Principles | Next Coming | design microservices architecture |
 | 10 | Microservices Design Principles Explained | B3 Cluster | Design Principles | Next Coming | microservices design principles |
 | 11 | How to Define Service Boundaries in Microservices | B3 Cluster | Design Principles | Next Coming | service boundaries in microservices |
@@ -87,7 +87,7 @@
 
 ### Local Pillar — What Are Microservices? A Simple Explanation for Beginners
 
-* **Status:** Next Coming
+* **Status:** Published
 * **Primary Keyword:** what are microservices
 * **Related Keywords:**
   * microservices explained
@@ -119,7 +119,7 @@
   * Distributed Systems
 * **Internal Linking Notes:**
   * Link → Fundamentals local pillar.
-  * Link → Diagrams & Visuals local pillar (this article **is** that pillar — see Bucket 2).
+  * Link → Architecture Diagrams & Core Flows local pillar (this article **is** that pillar — see Bucket 2).
   * Link → Global Main Pillar when published.
 * **Dual Role Note:** This article acts as both a Bucket 1 cluster article and the Bucket 2 local pillar.
 
@@ -145,7 +145,7 @@
 
 ### Cluster 1.3 — Microservices vs Monolithic Architecture
 
-* **Status:** Working Locally
+* **Status:** Published
 * **Primary Keyword:** microservices vs monolithic
 * **Related Keywords:**
   * monolithic architecture vs microservices
@@ -164,9 +164,9 @@
 
 ---
 
-## Bucket 2: Diagrams & Visuals
+## Bucket 2: Architecture Diagrams & Core Flows
 
-* **Category:** Visual Guides
+* **Category:** Architecture Diagrams & Core Flows
 * **Common Purpose:** Win visual searches and explain architecture using diagrams.
 
 ### Local Pillar — Microservices Architecture Diagram Explained + Examples
@@ -186,7 +186,7 @@
 * **Internal Linking Notes:**
   * This article acts as both:
     * A cluster article under Fundamentals (Bucket 1).
-    * The local pillar for Diagrams & Visuals (Bucket 2).
+    * The local pillar for Architecture Diagrams & Core Flows (Bucket 2).
   * Link → All visual/deep-dive cluster articles below.
   * Link up → Global Main Pillar when published.
 
