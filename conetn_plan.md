@@ -1,7 +1,7 @@
 # Microservices Architecture — Content Roadmap
 
 **Authority Topic:** Microservices Architecture
-**Total Pages:** 41 — 1 global pillar, 8 local bucket pillars, 32 cluster articles.
+**Total Pages:** 43 — 1 global pillar, 8 local bucket pillars, 34 cluster articles.
 
 ---
 
@@ -15,41 +15,43 @@
 | 3 | Microservices Architecture Components Explained With Examples | B1 Cluster | Fundamentals | Published | components of microservices architecture |
 | 4 | Microservices vs Monolithic Architecture | B1 Cluster | Fundamentals | Published | microservices vs monolithic |
 | 5 | API Gateway in Microservices Architecture Explained | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | api gateway in microservices |
-| 6 | Database per Service Pattern Explained | B2 Cluster (linked from B4) | Architecture Diagrams & Core Flows | Next Coming | database per service pattern |
-| 7 | Service Discovery in Microservices Explained | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | service discovery in microservices |
-| 8 | Event-Driven Microservices Architecture Diagram | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | event-driven microservices architecture |
-| 9 | How to Design Microservices Architecture Using Patterns and Principles | B3 Pillar | Design Principles | Next Coming | design microservices architecture |
-| 10 | Microservices Design Principles Explained | B3 Cluster | Design Principles | Next Coming | microservices design principles |
-| 11 | How to Define Service Boundaries in Microservices | B3 Cluster | Design Principles | Next Coming | service boundaries in microservices |
-| 12 | Bounded Context in Microservices Explained | B3 Cluster | Design Principles | Next Coming | bounded context microservices |
-| 13 | Loose Coupling in Microservices Architecture | B3 Cluster | Design Principles | Next Coming | loose coupling microservices |
-| 14 | Microservices Design Patterns Explained | B4 Pillar | Design Patterns | Next Coming | microservices design patterns |
-| 15 | API Gateway Pattern in Microservices | B4 Cluster | Design Patterns | Next Coming | api gateway pattern |
-| 16 | Saga Pattern in Microservices | B4 Cluster | Design Patterns | Next Coming | saga pattern microservices |
-| 17 | CQRS Pattern in Microservices Explained | B4 Cluster | Design Patterns | Next Coming | cqrs pattern microservices |
-| 18 | Circuit Breaker Pattern in Microservices | B4 Cluster | Design Patterns | Next Coming | circuit breaker pattern microservices |
-| 19 | Strangler Fig Pattern for Migrating to Microservices | B4 Cluster | Design Patterns | Next Coming | strangler fig pattern |
-| 20 | Microservices Deployment Guide: Strategies, Patterns, and Best Practices | B5 Pillar | Deployment & DevOps | Next Coming | microservices deployment |
-| 21 | 5 Ways to Deploy Microservices | B5 Cluster | Deployment & DevOps | Next Coming | ways to deploy microservices |
-| 22 | Microservice Deployment Patterns Explained | B5 Cluster | Deployment & DevOps | Next Coming | microservice deployment patterns |
-| 23 | Deploying Microservices with Docker | B5 Cluster | Deployment & DevOps | Next Coming | deploying microservices with docker |
-| 24 | Deploying Microservices with Kubernetes | B5 Cluster | Deployment & DevOps | Next Coming | deploying microservices with kubernetes |
-| 25 | Blue-Green vs Canary Deployment | B5 Cluster | Deployment & DevOps | Next Coming | blue-green vs canary deployment |
-| 26 | Microservices Deployment Checklist | B5 Cluster | Deployment & DevOps | Next Coming | microservices deployment checklist |
-| 27 | Testing and Deploying Microservices: Best Practices | B6 Pillar | Testing & SRE | Next Coming | testing and deploying microservices |
-| 28 | Microservices Testing Strategy Explained | B6 Cluster | Testing & SRE | Next Coming | microservices testing strategy |
-| 29 | Contract Testing in Microservices | B6 Cluster | Testing & SRE | Next Coming | contract testing microservices |
-| 30 | Integration Testing in Microservices | B6 Cluster | Testing & SRE | Next Coming | integration testing microservices |
-| 31 | Monitoring Microservices After Deployment | B6 Cluster | Testing & SRE | Next Coming | monitoring microservices |
-| 32 | Common Microservices Deployment Mistakes | B6 Cluster | Testing & SRE | Next Coming | microservices deployment mistakes |
-| 33 | Microservices Architecture Example for an E-commerce App | B7 Pillar | Real-World Examples | Next Coming | microservices architecture example ecommerce |
-| 34 | Food Delivery Microservices Example | B7 Cluster | Real-World Examples | Next Coming | microservices architecture example food delivery |
-| 35 | Banking App Microservices Example | B7 Cluster | Real-World Examples | Next Coming | microservices architecture example banking |
-| 36 | Example with API Gateway and Database per Service | B7 Cluster | Real-World Examples | Next Coming | microservices architecture example api gateway |
-| 37 | Monolith to Microservices Migration Plan | B7 Cluster | Real-World Examples | Next Coming | monolith to microservices migration |
-| 38 | Best Microservices Books for Beginners and Architects | B8 Pillar | Learning Resources | Next Coming | best microservices books |
-| 39 | Building Microservices by Sam Newman: Summary | B8 Cluster | Learning Resources | Next Coming | building microservices sam newman summary |
-| 40 | Microservices Learning Roadmap for Beginners | B8 Cluster | Learning Resources | Next Coming | microservices learning roadmap |
+| 6 | API Gateway vs Load Balancer vs Reverse Proxy Explained | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | api gateway vs load balancer |
+| 7 | Database per Service Pattern Explained | B2 Cluster (linked from B4) | Architecture Diagrams & Core Flows | Next Coming | database per service pattern |
+| 8 | Service Discovery in Microservices Explained | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | service discovery in microservices |
+| 9 | Event-Driven Microservices Architecture Diagram | B2 Cluster | Architecture Diagrams & Core Flows | Next Coming | event-driven microservices architecture |
+| 10 | How to Design Microservices Architecture Using Patterns and Principles | B3 Pillar | Design Principles | Next Coming | design microservices architecture |
+| 11 | Microservices Design Principles Explained | B3 Cluster | Design Principles | Next Coming | microservices design principles |
+| 12 | How to Define Service Boundaries in Microservices | B3 Cluster | Design Principles | Next Coming | service boundaries in microservices |
+| 13 | Bounded Context in Microservices Explained | B3 Cluster | Design Principles | Next Coming | bounded context microservices |
+| 14 | Loose Coupling in Microservices Architecture | B3 Cluster | Design Principles | Next Coming | loose coupling microservices |
+| 15 | Microservices Design Patterns Explained | B4 Pillar | Design Patterns | Next Coming | microservices design patterns |
+| 16 | API Gateway Pattern in Microservices | B4 Cluster | Design Patterns | Next Coming | api gateway pattern |
+| 17 | Saga Pattern in Microservices | B4 Cluster | Design Patterns | Next Coming | saga pattern microservices |
+| 18 | CQRS Pattern in Microservices Explained | B4 Cluster | Design Patterns | Next Coming | cqrs pattern microservices |
+| 19 | Circuit Breaker Pattern in Microservices | B4 Cluster | Design Patterns | Next Coming | circuit breaker pattern microservices |
+| 20 | Strangler Fig Pattern for Migrating to Microservices | B4 Cluster | Design Patterns | Next Coming | strangler fig pattern |
+| 21 | Backend for Frontend Pattern Explained for Microservices | B4 Cluster | Design Patterns | Next Coming | backend for frontend pattern |
+| 22 | Microservices Deployment Guide: Strategies, Patterns, and Best Practices | B5 Pillar | Deployment & DevOps | Next Coming | microservices deployment |
+| 23 | 5 Ways to Deploy Microservices | B5 Cluster | Deployment & DevOps | Next Coming | ways to deploy microservices |
+| 24 | Microservice Deployment Patterns Explained | B5 Cluster | Deployment & DevOps | Next Coming | microservice deployment patterns |
+| 25 | Deploying Microservices with Docker | B5 Cluster | Deployment & DevOps | Next Coming | deploying microservices with docker |
+| 26 | Deploying Microservices with Kubernetes | B5 Cluster | Deployment & DevOps | Next Coming | deploying microservices with kubernetes |
+| 27 | Blue-Green vs Canary Deployment | B5 Cluster | Deployment & DevOps | Next Coming | blue-green vs canary deployment |
+| 28 | Microservices Deployment Checklist | B5 Cluster | Deployment & DevOps | Next Coming | microservices deployment checklist |
+| 29 | Testing and Deploying Microservices: Best Practices | B6 Pillar | Testing & SRE | Next Coming | testing and deploying microservices |
+| 30 | Microservices Testing Strategy Explained | B6 Cluster | Testing & SRE | Next Coming | microservices testing strategy |
+| 31 | Contract Testing in Microservices | B6 Cluster | Testing & SRE | Next Coming | contract testing microservices |
+| 32 | Integration Testing in Microservices | B6 Cluster | Testing & SRE | Next Coming | integration testing microservices |
+| 33 | Monitoring Microservices After Deployment | B6 Cluster | Testing & SRE | Next Coming | monitoring microservices |
+| 34 | Common Microservices Deployment Mistakes | B6 Cluster | Testing & SRE | Next Coming | microservices deployment mistakes |
+| 35 | Microservices Architecture Example for an E-commerce App | B7 Pillar | Real-World Examples | Next Coming | microservices architecture example ecommerce |
+| 36 | Food Delivery Microservices Example | B7 Cluster | Real-World Examples | Next Coming | microservices architecture example food delivery |
+| 37 | Banking App Microservices Example | B7 Cluster | Real-World Examples | Next Coming | microservices architecture example banking |
+| 38 | Example with API Gateway and Database per Service | B7 Cluster | Real-World Examples | Next Coming | microservices architecture example api gateway |
+| 39 | Monolith to Microservices Migration Plan | B7 Cluster | Real-World Examples | Next Coming | monolith to microservices migration |
+| 40 | Best Microservices Books for Beginners and Architects | B8 Pillar | Learning Resources | Next Coming | best microservices books |
+| 41 | Building Microservices by Sam Newman: Summary | B8 Cluster | Learning Resources | Next Coming | building microservices sam newman summary |
+| 42 | Microservices Learning Roadmap for Beginners | B8 Cluster | Learning Resources | Next Coming | microservices learning roadmap |
 
 ---
 
@@ -265,6 +267,24 @@
   * Link → Diagrams local pillar.
   * Link → Saga Pattern (Cluster 4.2).
   * Link → Database per Service (Cluster 2.2).
+
+### Cluster 2.5 — API Gateway vs Load Balancer vs Reverse Proxy Explained
+
+* **Status:** Next Coming
+* **Primary Keyword:** api gateway vs load balancer
+* **Related Keywords:**
+  * api gateway vs reverse proxy
+  * difference between api gateway and load balancer
+  * reverse proxy vs load balancer
+  * microservices routing
+* **Related Tags:**
+  * Microservices
+  * API Gateway
+  * Load Balancing
+  * Reverse Proxy
+* **Internal Linking Notes:**
+  * Link → Architecture Diagrams & Core Flows local pillar.
+  * Link → API Gateway in Microservices (Cluster 2.1).
 
 ---
 
@@ -487,6 +507,24 @@
   * Link → Design Patterns local pillar.
   * Link → Monolith to Microservices Migration Plan (Cluster 7.4).
   * Link → Microservices vs Monolithic Architecture (Cluster 1.3).
+
+### Cluster 4.6 — Backend for Frontend Pattern Explained for Microservices
+
+* **Status:** Next Coming
+* **Primary Keyword:** backend for frontend pattern
+* **Related Keywords:**
+  * bff pattern microservices
+  * backend for frontend architecture
+  * bff microservices
+  * api gateway vs bff
+* **Related Tags:**
+  * Microservices
+  * Design Patterns
+  * BFF Pattern
+  * Frontend Architecture
+* **Internal Linking Notes:**
+  * Link → Design Patterns local pillar.
+  * Link → API Gateway Pattern (Cluster 4.1).
 
 ---
 
