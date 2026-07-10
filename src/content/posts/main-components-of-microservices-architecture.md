@@ -586,9 +586,11 @@ Here is how the components work during checkout:
 4. Order Service validates the order.
 5. Order Service saves the order in its own database.
 6. Order Service publishes an `OrderCreated` event to the message broker.
-7. Payment Service consumes the event and processes payment.
-8. Shipping Service consumes the event and prepares delivery.
-9. Notification Service sends an order confirmation.
+7. Payment Service consumes the event and starts payment processing.
+8. Shipping Service consumes the event and creates a pending fulfillment record, not a shipment.
+9. Notification Service consumes the event and sends an order received/pending payment message, not a confirmed-order message.
+
+*Note: This is a simplified component interaction example. A production checkout normally waits for payment and inventory outcomes before confirming or shipping the order.*
 10. Monitoring and tracing track the full request across services.
 11. CI/CD allows each service to be updated independently.
 12. Resilience patterns prevent one slow service from breaking the whole checkout flow.
