@@ -57,7 +57,17 @@ Instead, services can often be developed, tested, deployed, and scaled separatel
 
 For example, an online store might contain separate services for users, products, carts, orders, payments, inventory, and notifications. Together, those services provide the complete shopping experience.
 
-![Simple microservices explanation diagram showing one application split into User Service, Order Service, Payment Service, and Notification Service.](/assets/blog/what-are-microservices/simple-microservices-explanation-diagram.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/what-are-microservices/simple-microservices-explanation-diagram.webp"
+    alt="Simple microservices explanation diagram showing one application split into User Service, Order Service, Payment Service, and Notification Service."
+    width="1448"
+    height="1086"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 ## What Is a Microservice in Simple Terms?
 
@@ -298,7 +308,17 @@ The system could then be separated into services such as:
 * **Shipping Service:** manages fulfillment and delivery.
 * **Notification Service:** sends emails, SMS messages, or push notifications.
 
-![E-commerce microservices example showing User Service, Product Service, Order Service, Payment Service, Inventory Service, and Notification Service.](/assets/blog/what-are-microservices/ecommerce-microservices-example-diagram.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/what-are-microservices/ecommerce-microservices-example-diagram.webp"
+    alt="E-commerce microservices example showing User Service, Product Service, Order Service, Payment Service, Inventory Service, and Notification Service."
+    width="1600"
+    height="900"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 ### Example Request Flow: Placing an Order
 
@@ -354,7 +374,17 @@ The correct choice depends on:
 
 For a deeper comparison, read [Microservices vs Monolithic: Pros, Cons & Differences](/posts/microservices-vs-monolithic-architecture).
 
-![Beginner diagram comparing a monolithic application with a microservices architecture made of independent services.](/assets/blog/what-are-microservices/monolith-vs-microservices-beginner-diagram.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/what-are-microservices/monolith-vs-microservices-beginner-diagram.webp"
+    alt="Beginner diagram comparing a monolithic application with a microservices architecture made of independent services."
+    width="1672"
+    height="941"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 | Area           | Monolithic Architecture                                       | Microservices Architecture                          |
 | -------------- | ------------------------------------------------------------- | --------------------------------------------------- |

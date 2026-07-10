@@ -74,7 +74,17 @@ For a visual architecture explanation of services, gateways, and communication f
 
 The diagram below shows how a monolithic application is usually deployed as one application with one shared database.
 
-![Simple monolithic architecture diagram showing one application with UI layer, business logic, data access layer, and a shared database](/assets/blog/microservices-vs-monolithic-architecture/monolithic-architecture-diagram.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-vs-monolithic-architecture/monolithic-architecture-diagram.webp"
+    alt="Simple monolithic architecture diagram showing one application with UI layer, business logic, data access layer, and a shared database"
+    width="1448"
+    height="1086"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 ---
 
@@ -98,7 +108,17 @@ For a deeper breakdown of the [main components of microservices architecture](/p
 
 The diagram below shows how microservices split a system into independent services that communicate through APIs or events.
 
-![Simple microservices architecture diagram showing API gateway, independent services, service-owned databases, message broker, and monitoring](/assets/blog/microservices-vs-monolithic-architecture/microservices-architecture-diagram.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-vs-monolithic-architecture/microservices-architecture-diagram.webp"
+    alt="Simple microservices architecture diagram showing API gateway, independent services, service-owned databases, message broker, and monitoring"
+    width="1448"
+    height="1086"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 ---
 
@@ -503,7 +523,17 @@ For a visual walkthrough of request flow in microservices, see [Microservices Ar
 
 This side-by-side example shows the same e-commerce system as a monolith and as microservices.
 
-![E-commerce monolith vs microservices architecture diagram comparing one shared application with independent services and separate databases](/assets/blog/microservices-vs-monolithic-architecture/ecommerce-monolith-vs-microservices.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-vs-monolithic-architecture/ecommerce-monolith-vs-microservices.webp"
+    alt="E-commerce monolith vs microservices architecture diagram comparing one shared application with independent services and separate databases"
+    width="1672"
+    height="941"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 ---
 
@@ -571,7 +601,17 @@ The better question is:
 
 The decision flowchart below summarizes when to choose a monolith, modular monolith, or microservices.
 
-![Monolith vs microservices decision matrix flowchart for choosing monolithic architecture, modular monolith, or microservices architecture](/assets/blog/microservices-vs-monolithic-architecture/monolith-vs-microservices-decision-matrix.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-vs-monolithic-architecture/monolith-vs-microservices-decision-matrix.webp"
+    alt="Monolith vs microservices decision matrix flowchart for choosing monolithic architecture, modular monolith, or microservices architecture"
+    width="1448"
+    height="1086"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 ---
 

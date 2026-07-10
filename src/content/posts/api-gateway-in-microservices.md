@@ -147,7 +147,17 @@ The API Gateway architecture usually places the gateway between external clients
 
 Clients call the gateway. The gateway routes requests to services. Each service can own its own database. The gateway should not directly own service data.
 
-![API Gateway in microservices architecture diagram](/assets/blog/api-gateway-in-microservices/basic-api-gateway-architecture-diagram.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/api-gateway-in-microservices/basic-api-gateway-architecture-diagram.webp"
+    alt="API Gateway in microservices architecture diagram"
+    width="1254"
+    height="1254"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 *Clients call one API Gateway, and the gateway routes each request to the correct microservice.*
 
@@ -195,7 +205,17 @@ Route examples:
 
 This is the core of microservices request routing. The client asks for a public API route. The gateway maps that route to an internal service.
 
-![API Gateway request flow in microservices](/assets/blog/api-gateway-in-microservices/api-gateway-request-flow.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/api-gateway-in-microservices/api-gateway-request-flow.webp"
+    alt="API Gateway request flow in microservices"
+    width="1254"
+    height="1254"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 *A client request enters the API Gateway, passes common checks, routes to a backend service, and returns through the gateway.*
 
@@ -307,7 +327,17 @@ A **service mesh** is an infrastructure layer that manages service-to-service co
 
 The future API Gateway pattern article can go deeper into gateway aggregation, Backend for Frontend, and multiple gateway designs. For this article, the main rule is simple: use the gateway for edge concerns, not domain ownership.
 
-![Bad API Gateway design with too much business logic](/assets/blog/api-gateway-in-microservices/bad-api-gateway-design.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/api-gateway-in-microservices/bad-api-gateway-design.webp"
+    alt="Bad API Gateway design with too much business logic"
+    width="1254"
+    height="1254"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 *A gateway becomes risky when routing, authentication, order rules, payment rules, and discount logic all live in one place.*
 
@@ -353,7 +383,17 @@ Order Service creates the order and coordinates with other services as needed. P
 
 The gateway helps because routing is centralized, security rules stay consistent, and internal services can change without breaking the app.
 
-![E-commerce microservices API Gateway routing example](/assets/blog/api-gateway-in-microservices/ecommerce-api-gateway-routing-example.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/api-gateway-in-microservices/ecommerce-api-gateway-routing-example.webp"
+    alt="E-commerce microservices API Gateway routing example"
+    width="1254"
+    height="1254"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 *In an e-commerce app, the API Gateway routes product, order, payment, inventory, and notification requests to the right service.*
 
@@ -371,7 +411,17 @@ As the number of services grows, direct calls become harder to manage. The clien
 
 An API Gateway moves that client-facing complexity into a controlled layer.
 
-![API Gateway vs direct client-to-service calls](/assets/blog/api-gateway-in-microservices/api-gateway-vs-direct-client-service-calls.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/api-gateway-in-microservices/api-gateway-vs-direct-client-service-calls.webp"
+    alt="API Gateway vs direct client-to-service calls"
+    width="1254"
+    height="1254"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 *Direct client-to-service calls expose more service details to the client, while an API Gateway gives the client one stable entry point.*
 

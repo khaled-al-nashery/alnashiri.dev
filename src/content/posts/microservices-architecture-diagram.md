@@ -65,7 +65,17 @@ A high-level microservices architecture diagram often contains four main layers:
 3. Microservices layer
 4. Data layer
 
-![Microservices architecture diagram showing client layer, entry layer, independent services, and service-owned data.](/assets/blog/microservices-architecture-diagram/microservices-architecture-diagram-anatomy.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-architecture-diagram/microservices-architecture-diagram-anatomy.webp"
+    alt="Microservices architecture diagram showing client layer, entry layer, independent services, and service-owned data."
+    width="800"
+    height="732"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 | Layer | Main Role | Common Components | Purpose |
 | --- | --- | --- | --- |
@@ -251,7 +261,17 @@ Reliable asynchronous processing still requires careful handling of:
 * Monitoring
 * Consumer failures
 
-![Synchronous vs asynchronous microservices communication diagram comparing REST, gRPC, events, and message-broker flows.](/assets/blog/microservices-architecture-diagram/synchronous-vs-asynchronous-microservices-communication.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-architecture-diagram/synchronous-vs-asynchronous-microservices-communication.webp"
+    alt="Synchronous vs asynchronous microservices communication diagram comparing REST, gRPC, events, and message-broker flows."
+    width="800"
+    height="597"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 | Communication Type | How It Works | Common Tools | Best For |
 | --- | --- | --- | --- |
@@ -311,7 +331,17 @@ The system should not present the order as paid, confirmed, or ready for shippin
 
 An e-commerce platform is one of the clearest examples of microservices architecture because it contains multiple business capabilities that can be separated into independent services.
 
-![E-commerce microservices architecture diagram showing a mobile app, API Gateway, Cart Service, Catalog Service, Order Service, Payment Service, Shipping Service, Notification Service, and Kafka event flow.](/assets/blog/microservices-architecture-diagram/ecommerce-microservices-architecture-diagram-v2.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-architecture-diagram/ecommerce-microservices-architecture-diagram-v2.webp"
+    alt="E-commerce microservices architecture diagram showing a mobile app, API Gateway, Cart Service, Catalog Service, Order Service, Payment Service, Shipping Service, Notification Service, and Kafka event flow."
+    width="1672"
+    height="941"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 In this simplified architecture:
 
@@ -342,7 +372,17 @@ That application commonly uses one shared database.
 
 A microservices architecture separates the application into independently owned services. Each service owns its logic and controls its data boundary.
 
-![Monolith vs microservices architecture diagram comparing one shared application and database with independent services and service-owned data.](/assets/blog/microservices-architecture-diagram/monolith-vs-microservices-architecture-diagram.webp)
+<figure class="my-8">
+  <img
+    src="/assets/blog/microservices-architecture-diagram/monolith-vs-microservices-architecture-diagram.webp"
+    alt="Monolith vs microservices architecture diagram comparing one shared application and database with independent services and service-owned data."
+    width="800"
+    height="323"
+    class="w-full h-auto rounded-lg shadow-xl"
+    loading="lazy"
+    decoding="async"
+  />
+</figure>
 
 ## Key Differences Between Monolithic and Microservices Architecture
 
