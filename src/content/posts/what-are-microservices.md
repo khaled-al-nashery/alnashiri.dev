@@ -1,7 +1,7 @@
 ---
 
 title: "What Are Microservices? A Simple Explanation for Beginners"
-description: "The complete beginner's guide to microservices. Learn exactly what they are, how they work, and why they are replacing monolithic systems."
+description: "Learn what microservices are, how they differ from monolithic applications, and when this architecture is—or is not—the right choice."
 pubDatetime: 2026-07-09T12:00:00Z
 modDatetime: null
 category: "Fundamentals"
@@ -132,7 +132,7 @@ A simple request flow might look like this:
 
 1. A user clicks “Place Order” in an online store.
 2. The frontend sends the request to the backend.
-3. An API gateway or backend entry point receives the request.
+3. An [API gateway](/posts/api-gateway-in-microservices/) or backend entry point receives the request.
 4. The Order Service creates the order.
 5. The Payment Service processes the payment.
 6. The Inventory Service updates stock.
@@ -165,7 +165,7 @@ To understand how microservices work, it helps to know these terms:
 | ---------------------- | ------------------------------------------------------------- |
 | Microservice           | One independent service with one responsibility               |
 | API                    | A contract that allows software systems to communicate        |
-| API gateway            | An entry point that routes requests to the right service      |
+| [API gateway](/posts/api-gateway-in-microservices/)            | An entry point that routes requests to the right service      |
 | service discovery in microservices      | A way for services to find each other in dynamic environments |
 | Database per service   | A pattern where each service owns its own data                |
 | Message broker         | A tool that passes messages or events between services        |
@@ -332,7 +332,7 @@ You do not need to master all of these on day one. The important idea is that mi
 
 For more detail, read [Microservices Architecture Components Explained With Examples](/posts/main-components-of-microservices-architecture).
 
-Future articles such as API Gateway in Microservices Architecture Explained, Service Discovery in Microservices Explained, and Database per Service Pattern Explained can go deeper into each component without overloading this beginner article.
+Future articles such as [API Gateway in Microservices Architecture Explained](/posts/api-gateway-in-microservices/), Service Discovery in Microservices Explained, and Database per Service Pattern Explained can go deeper into each component without overloading this beginner article.
 
 ## Advantages and Disadvantages of Microservices
 
@@ -518,7 +518,7 @@ On this site, the best next steps are:
 * Read [Microservices Architecture Components Explained With Examples](/posts/main-components-of-microservices-architecture) if you want to understand API gateways, service discovery, databases, and message brokers.
 * Read [Microservices vs Monolithic Architecture Guide](/posts/microservices-vs-monolithic-architecture) if you want to compare both architecture styles more deeply.
 
-Future topics such as API Gateway in Microservices Architecture Explained, Service Discovery in Microservices Explained, Database per Service Pattern Explained, and Microservices Learning Roadmap for Beginners can help you build the next layer of understanding.
+Future topics such as [API Gateway in Microservices Architecture Explained](/posts/api-gateway-in-microservices/), Service Discovery in Microservices Explained, Database per Service Pattern Explained, and Microservices Learning Roadmap for Beginners can help you build the next layer of understanding.
 
 ## Frequently Asked Questions About Microservices
 
