@@ -3,8 +3,8 @@ title: "Microservices Architecture Diagram Explained + Examples"
 description: "Complete microservices architecture diagram guide with layers, API gateways, database-per-service, Kafka event flows, and real e-commerce examples."
 pubDatetime: 2026-07-06T09:00:00Z
 modDatetime: null
-category: "Visual Guides"
-tags: ["Microservices", "Software Architecture", "Architecture", "API Gateway", "Kafka"]
+category: "Architecture Diagrams & Core Flows"
+tags: ["Microservices", "Software Architecture", "API Gateway"]
 featured: true
 draft: false
 ---

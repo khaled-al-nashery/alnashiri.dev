@@ -5,7 +5,7 @@ description: "Learn what an API Gateway is in microservices, how request flow wo
 pubDatetime: 2026-07-09T12:00:00Z
 modDatetime: null
 category: "Architecture Diagrams & Core Flows"
-tags: ["Microservices", "API Gateway", "Software Architecture", "System Design", "Backend Architecture", "Distributed Systems"]
+tags: ["Microservices", "API Gateway", "Software Architecture", "Distributed Systems"]
 -------------------------------------------------------------------------------------------------------------------------------
 
 ## Introduction: Why Clients Should Not Call Every Microservice Directly

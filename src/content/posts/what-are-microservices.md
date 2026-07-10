@@ -5,7 +5,7 @@ description: "The complete beginner's guide to microservices. Learn exactly what
 pubDatetime: 2026-07-09T12:00:00Z
 modDatetime: null
 category: "Fundamentals"
-tags: ["Microservices", "Software Architecture", "Beginner Guide", "Architecture Basics"]
+tags: ["Microservices", "Software Architecture"]
 featured: false
 draft: false
 ---

@@ -4,7 +4,7 @@ description: "Compare microservices vs monolithic architecture with key differen
 pubDatetime: 2026-07-08T09:00:00Z
 modDatetime: null
 category: "Fundamentals"
-tags: ["Microservices", "Monolithic Architecture", "Software Architecture"]
+tags: ["Microservices", "Software Architecture"]
 featured: false
 draft: false
 ---

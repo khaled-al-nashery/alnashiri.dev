@@ -4,7 +4,7 @@ description: "Learn the core components of microservices architecture: APIs, gat
 pubDatetime: 2026-07-07T12:00:00Z
 modDatetime: null
 category: "Fundamentals"
-tags: ["Microservices", "Distributed Systems", "Architecture", "API Gateway", "Service Discovery"]
+tags: ["Microservices", "Distributed Systems", "Software Architecture", "API Gateway"]
 featured: false
 draft: false
 ---
