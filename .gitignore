@@ -31,3 +31,18 @@ public/pagefind
 
 # docker compose
 compose.override.yaml
+
+# temporary scripts and reports
+conetn_plan.md
+fix.cjs
+optimize.cjs
+get-dimensions.mjs
+lighthouse-report.json
+posts-report.json
+buket2ar3.md
+buket2ar4.md
+
+# agent context
+CLAUDE.md
+AGENTS.md
+.agents/
