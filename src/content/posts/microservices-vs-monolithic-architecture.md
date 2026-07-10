@@ -1,5 +1,5 @@
 ---
-title: "Microservices vs Monolithic Architecture Guide"
+title: "Microservices vs Monolithic: Pros, Cons & Differences"
 description: "Compare microservices vs monolithic architecture with key differences, pros, cons, examples, and when to use each approach."
 pubDatetime: 2026-07-08T09:00:00Z
 modDatetime: null
