@@ -332,7 +332,7 @@ You do not need to master all of these on day one. The important idea is that mi
 
 For more detail, read [Microservices Architecture Components Explained With Examples](/posts/main-components-of-microservices-architecture).
 
-Future articles such as [API Gateway in Microservices Architecture Explained](/posts/api-gateway-in-microservices/), Service Discovery in Microservices Explained, and Database per Service Pattern Explained can go deeper into each component without overloading this beginner article.
+Articles such as [API Gateway in Microservices Architecture Explained](/posts/api-gateway-in-microservices/), along with future topics like Service Discovery in Microservices Explained, and Database per Service Pattern Explained, can go deeper into each component without overloading this beginner article.
 
 ## Advantages and Disadvantages of Microservices
 
@@ -518,7 +518,7 @@ On this site, the best next steps are:
 * Read [Microservices Architecture Components Explained With Examples](/posts/main-components-of-microservices-architecture) if you want to understand API gateways, service discovery, databases, and message brokers.
 * Read [Microservices vs Monolithic Architecture Guide](/posts/microservices-vs-monolithic-architecture) if you want to compare both architecture styles more deeply.
 
-Future topics such as [API Gateway in Microservices Architecture Explained](/posts/api-gateway-in-microservices/), Service Discovery in Microservices Explained, Database per Service Pattern Explained, and Microservices Learning Roadmap for Beginners can help you build the next layer of understanding.
+Articles such as [API Gateway in Microservices Architecture Explained](/posts/api-gateway-in-microservices/), along with future topics like Service Discovery in Microservices Explained, Database per Service Pattern Explained, and Microservices Learning Roadmap for Beginners, can help you build the next layer of understanding.
 
 ## Frequently Asked Questions About Microservices
 
