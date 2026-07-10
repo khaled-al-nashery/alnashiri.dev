@@ -22,6 +22,15 @@ This guide explains the difference between monolithic and microservices architec
 > **Quick Answer**
 > A monolithic architecture builds the application as one deployable unit, usually with one codebase and a shared database. Microservices architecture splits the application into smaller independent services that can be developed, deployed, and scaled separately. A monolith is usually better for small teams, MVPs, and simple systems. Microservices are better when the system is large, complex, and needs independent scaling, deployment, and team ownership.
 
+## Quick Decision Flow
+
+Not sure where to start? Here is a quick cheat sheet for decision-making:
+
+* **Small team and uncertain product** → Start with a modular monolith.
+* **Independent teams and clear domain boundaries** → Consider microservices.
+* **Strong operational platform already available** → Microservices become more realistic.
+* **Mainly trying to “scale” one simple application** → First consider scaling the monolith.
+
 
 
 
@@ -502,7 +511,7 @@ This side-by-side example shows the same e-commerce system as a monolith and as 
 
 The biggest mistake is choosing microservices too early.
 
-Many teams choose microservices because large companies use them. But companies like Netflix, Amazon, and Uber reached a level of scale and team complexity that most products do not have at the beginning.
+Many teams choose microservices because large companies use them. But the largest global tech companies reached a level of scale and team complexity that most products do not have at the beginning.
 
 Another mistake is assuming monolith means bad architecture.
 
