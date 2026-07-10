@@ -74,7 +74,7 @@ The table below summarizes the key components of microservices architecture befo
 | Monitoring, logging, and tracing     | Shows system health and failures          | Trace a slow checkout request               | Required                           |
 | Configuration and secrets management | Manages settings and sensitive data       | API keys in a vault                         | Required in production             |
 | Containers and orchestration         | Packages and runs services                | Docker, Kubernetes                          | Often needed in production         |
-| CI/CD pipeline                       | Automates build, test, and deployment     | GitHub Actions, Jenkins                     | Required for serious production    |
+| CI/CD pipeline                       | Automates build, test, and deployment     | GitHub Actions, Jenkins                     | Typically essential for independently deployable production services |
 | Resilience components                | Prevents cascading failures               | Timeout, retry, circuit breaker             | Basic resilience required          |
 
 The important point is this: you do not need to add every advanced tool immediately. A good microservices system starts simple and adds components when they solve real problems.
@@ -515,6 +515,16 @@ A microservices system without resilience patterns can suffer cascading failures
 Beginners often think they must use every microservices tool immediately. That is not true.
 
 The better approach is to understand when each component becomes useful.
+
+Here is a general guide to which components you need based on the size and stage of your system:
+
+| System Stage               | Usually Needed                             | Often Unnecessary Initially           |
+| -------------------------- | ------------------------------------------ | ------------------------------------- |
+| Small system               | Services, APIs, database, logs             | Service mesh, complex event streaming |
+| Growing platform           | Gateway, CI/CD, monitoring, messaging      | Multi-cluster orchestration           |
+| Large distributed platform | Discovery, tracing, resiliency, automation | Depends on requirements               |
+
+You can also look at specific components to see when they are necessary:
 
 | Component                    | You Need It When                             | You May Not Need It Yet When                   |
 | ---------------------------- | -------------------------------------------- | ---------------------------------------------- |
