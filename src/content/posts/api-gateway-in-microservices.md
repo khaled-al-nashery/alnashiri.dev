@@ -4,6 +4,7 @@ title: "API Gateway in Microservices Architecture Explained With Examples"
 description: "Learn what an API Gateway is in microservices, how request flow works, where it fits, key responsibilities, examples, mistakes, and best practices."
 pubDatetime: 2026-07-09T12:00:00Z
 modDatetime: null
+category: "Architecture Diagrams & Core Flows"
 tags: ["Microservices", "API Gateway", "Software Architecture", "System Design", "Backend Architecture", "Distributed Systems"]
 -------------------------------------------------------------------------------------------------------------------------------
 
@@ -51,7 +52,7 @@ A **backend service** is a server-side service that processes requests, applies 
 
 The API Gateway receives requests from clients and sends them to the correct backend service. This is called **request routing**. For example, the gateway may send `/api/users` requests to User Service and `/api/orders` requests to Order Service.
 
-After the API Gateway decides which backend service should handle a request, [service discovery in microservices](/posts/service-discovery-in-microservices/) helps locate a healthy running instance of that service.
+After the API Gateway decides which backend service should handle a request, service discovery in microservices helps locate a healthy running instance of that service.
 
 A simple analogy is a hotel reception desk.
 

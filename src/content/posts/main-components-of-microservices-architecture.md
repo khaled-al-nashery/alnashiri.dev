@@ -185,7 +185,7 @@ There are two common approaches:
 | Client-side discovery | The client service asks a registry for available service instances and chooses one              |
 | Server-side discovery | The client sends the request to a load balancer, and the load balancer finds a healthy instance |
 
-Service discovery makes the system more flexible because services can move and scale without breaking communication. For a deeper explanation, read [service discovery in microservices](/posts/service-discovery-in-microservices/).
+Service discovery makes the system more flexible because services can move and scale without breaking communication. For a deeper explanation, read service discovery in microservices.
 
 ---
 

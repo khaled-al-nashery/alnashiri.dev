@@ -247,7 +247,7 @@ However, microservices also introduce more failure points.
 
 Network calls can fail. Services can time out. Dependencies can be unavailable. Retries can overload another service if they are not controlled.
 
-Microservices solve some reliability problems, but they create distributed-systems problems. Managing these network calls often requires infrastructure like an API Gateway and [service discovery in microservices](/posts/service-discovery-in-microservices/).
+Microservices solve some reliability problems, but they create distributed-systems problems. Managing these network calls often requires infrastructure like an API Gateway and service discovery in microservices.
 
 ---
 

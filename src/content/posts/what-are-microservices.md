@@ -166,7 +166,7 @@ To understand how microservices work, it helps to know these terms:
 | Microservice           | One independent service with one responsibility               |
 | API                    | A contract that allows software systems to communicate        |
 | API gateway            | An entry point that routes requests to the right service      |
-| [service discovery in microservices](/posts/service-discovery-in-microservices/)      | A way for services to find each other in dynamic environments |
+| service discovery in microservices      | A way for services to find each other in dynamic environments |
 | Database per service   | A pattern where each service owns its own data                |
 | Message broker         | A tool that passes messages or events between services        |
 | Distributed system     | A system made of multiple networked parts                     |

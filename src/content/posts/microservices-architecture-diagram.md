@@ -85,7 +85,7 @@ Without an API gateway, clients may need to call multiple services directly. Tha
 
 ## Microservices Layer: Independent Services
 
-The microservices layer contains the core business services of the application. Each service is responsible for one business capability. Once the gateway routes a request, [service discovery in microservices](/posts/service-discovery-in-microservices/) helps find the exact running instance of the target service.
+The microservices layer contains the core business services of the application. Each service is responsible for one business capability. Once the gateway routes a request, service discovery in microservices helps find the exact running instance of the target service.
 
 Examples include:
 
