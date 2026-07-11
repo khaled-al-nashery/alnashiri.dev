@@ -68,7 +68,6 @@ export default defineConfig({
       weights: [400, 600, 700],
       styles: ["normal", "italic"],
       subsets: ["latin"],
-      preload: [{ weight: 400, style: "normal", subset: "latin" }],
     },
     {
       name: "JetBrains Mono",
